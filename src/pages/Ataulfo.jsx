@@ -1,11 +1,14 @@
 import React from "react";
+import { useParams } from "react-router-dom";
+import styles from '../styles/Rey.module.css'
 
 const Ataulfo = () => {
+  const rey = useParams();
   return (
     <>
-      <div>
-        <img src="https://www.html6.es/img/rey_ataulfo.png" alt="" />
-        <h2>Ataulfo</h2>
+      <div className={`${styles.contenedor}`}>
+        <img src={`https://www.html6.es/img/rey_${rey.nombre}.png`} alt="" />
+        <h2 className={`${styles.titulo}`}>{rey.nombre}</h2>
       </div>
     </>
   );

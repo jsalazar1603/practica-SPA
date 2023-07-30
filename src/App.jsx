@@ -13,15 +13,17 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      <Nav/>
+      <div className='nav-bar'>
+        <Nav/>
+      </div>
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/atanagildo/:nombre' element={<Atanagildo/>}/>
-        <Route path='/ataulfo/:nombre' element={<Ataulfo/>}/>
-        <Route path='/ervigio/:nombre' element={<Ervigio/>}/>
-        <Route path='/leovigildo/:nombre' element={<Leovigildo/>}/>
-        <Route path='/recesvinto/:nombre' element={<Recesvinto/>}/>
-        <Route path='/sisebuto/:nombre' element={<Sisebuto/>}/>
+        <Route path='/:nombre/' element={<Atanagildo/>}/>
+        <Route path='/:nombre' element={<Ataulfo/>}/>
+        <Route path='/:nombre' element={<Ervigio/>}/>
+        <Route path='/:nombre' element={<Leovigildo/>}/>
+        <Route path='/:nombre' element={<Recesvinto/>}/>
+        <Route path='/:nombre' element={<Sisebuto/>}/>
       </Routes>
       </BrowserRouter>
     </>

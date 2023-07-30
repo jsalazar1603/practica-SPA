@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+}
+/* Estilos específicos para el componente Home */
+.homeListItem {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    width: 30%;
+  }
+  .homeList {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .homeLink {
+    /* Estilos para los enlaces en el componente Home */
+    text-decoration: none;
+    color: black;
+    background-color: unset;
+  }
+  
+  .homeLink:hover {
+    background-color: unset;
+  }
+  

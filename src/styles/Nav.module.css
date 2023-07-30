@@ -1,0 +1,23 @@
+a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px 50px; 
+    font-size:12px ;
+    transition: 0.3s all ease-in-out;
+}
+
+.activado{
+    color: white;
+    background-color: crimson;
+}
+
+a:hover{
+    background-color: darkslateblue;
+}
+.activado:hover{
+    color: white;
+    background-color: crimson;
+}
+
+
